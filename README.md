@@ -60,3 +60,8 @@ While this is a super fun way to demonstrate automation using JavaScript and Git
 ---
 ### 👤 Built by Rudransh
 🔗 [GitHub Profile](https://github.com/rudransh-ai-dev)
+
+
+For 202X use this 
+const date = moment("202x-01-01").add(x, "d").format();
+X is the value of the year like 2021, or 2027

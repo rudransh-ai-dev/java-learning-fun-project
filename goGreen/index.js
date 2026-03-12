@@ -3,7 +3,7 @@ import moment from "moment";
 import simpleGit from "simple-git";
 import random from "random";
 
-const path = "./data.json";
+const path = "./goGreen/data.json";
 
 const markCommit = (x, y) => {
   const date = moment()
@@ -25,7 +25,7 @@ const markCommit = (x, y) => {
 const makeCommits = (n) => {
   if (n === 0) return simpleGit().push();
 
-  const x = random.int(0, 365); // random day in 2024
+  const x = random.int(0, 364); // random day in 2025
   const date = moment("2024-01-01").add(x, "d").format();
 
   const data = {
@@ -38,4 +38,4 @@ const makeCommits = (n) => {
   });
 };
 
-makeCommits(300);
+makeCommits(100);
