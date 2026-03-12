@@ -8,7 +8,9 @@ Welcome to my **Java Learning** journey! This repository is a collection of Java
 
 ```
 java-learning-/
+├── goGreen/        # Tool to generate GitHub contribution activity
 ├── venv/           # Python virtual environment (for tooling/scripting support)
+├── package.json    # Node.js dependencies and scripts
 └── README.md       # This file
 ```
 
@@ -19,6 +21,7 @@ java-learning-/
 ## 🧠 Topics Covered (Planned / In Progress)
 
 - [ ] Java Basics (Variables, Data Types, Operators)
+- [x] GitHub Automation (via `goGreen`)
 - [ ] Control Flow (if/else, loops, switch)
 - [ ] Object-Oriented Programming (Classes, Objects, Inheritance, Polymorphism)
 - [ ] Interfaces & Abstract Classes
@@ -61,6 +64,20 @@ javac FileName.java
 # Run the compiled class
 java FileName
 ```
+
+---
+
+## 🛠️ GitHub Automation (goGreen)
+
+This repository includes a utility to generate GitHub contribution activity.
+
+### How to use:
+1. Ensure your Node.js dependencies are installed: `npm install`
+2. Run the script:
+   ```bash
+   npm run gogreen
+   ```
+*Note: This script makes commits to the past to modify your contribution graph.*
 
 ---
 
