@@ -1,0 +1,12 @@
+{
+  "name": "java-learning-",
+  "version": "1.0.0",
+  "description": "Welcome to my **Java Learning** journey! This repository is a collection of Java programs, practice exercises, and projects as I explore and master the Java programming language.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
