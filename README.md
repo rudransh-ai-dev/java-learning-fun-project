@@ -1,84 +1,62 @@
-# ☕ Java Learning Repository
+# 🌲 Green Graph (GitHub Contribution Automator)
 
-Welcome to my **Java Learning** journey! This repository is a collection of Java programs, practice exercises, and projects as I explore and master the Java programming language.
+**Green Graph** is a clever, customizable Node.js script that lets you paint your GitHub contribution graph by automating commits. With this tool, you can make it look like you've been working tirelessly in the past (or the future).
 
----
-
-## 📁 Repository Structure
-
-```
-java-learning-/
-├── goGreen/        # Tool to generate GitHub contribution activity
-├── package.json    # Node.js dependencies and scripts
-└── README.md       # This file
-```
-
-> **Note:** Java source files, exercises, and projects will be added here as the learning progresses.
+The tool randomly selects dates within a given timeframe (like the entire year of 2025) and creates a series of timestamped backdated commits, completely filling up those green squares on your GitHub profile. 🚀
 
 ---
 
-## 🧠 Topics Covered (Planned / In Progress)
-
-- [ ] Java Basics (Variables, Data Types, Operators)
-- [x] GitHub Automation (via `goGreen`)
-- [ ] Control Flow (if/else, loops, switch)
-- [ ] Object-Oriented Programming (Classes, Objects, Inheritance, Polymorphism)
-- [ ] Interfaces & Abstract Classes
-- [ ] Exception Handling
-- [ ] Collections Framework (ArrayList, HashMap, etc.)
-- [ ] File I/O
-- [ ] Multithreading & Concurrency
-- [ ] Java Streams & Lambda Expressions
-- [ ] Data Structures & Algorithms in Java
+## 🛠️ Built With
+- **Node.js** (v20+)
+- **simple-git** - For easy execution of asynchronous git commands
+- **moment** - To easily handle subtract/add dates from the present
+- **random** - To randomly distribute commits across the grid
 
 ---
 
-## 🛠️ Setup
+## 🚀 Getting Started
 
-### Prerequisites
+To get your own contribution graph fully populated:
 
-- **Java JDK** 11 or higher → [Download here](https://www.oracle.com/java/technologies/downloads/)
-- Any IDE: **IntelliJ IDEA**, **Eclipse**, or **VS Code** with Java Extension Pack
+### 1. Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
+Ensure you've cloned this repository into a folder that has a `.git` tracking connection to your GitHub repository.
 
-## 🚀 How to Run Java Programs
-
+### 2. Install Dependencies
+Install the required npm modules to run the project.
 ```bash
-# Compile a Java file
-javac FileName.java
-
-# Run the compiled class
-java FileName
+npm install
 ```
 
----
+### 3. Customize Your Script (Optional)
+By default, the script generates **300 commits randomly scattered across the year 2025**.
 
-## 🛠️ GitHub Automation (goGreen)
+If you wish to change this behavior:
+- Open `index.js`
+- Scroll to the bottom where `makeCommits(300)` is called
+- Change the `300` to whatever number of total commits you want
+- Modify the `moment` timeframe logic to target a different year or timeframe
 
-This repository includes a utility to generate GitHub contribution activity.
+### 4. Run the Script
+When you're ready to create the history, execute the script:
+```bash
+npm start
+```
+*Alternatively run `node index.js`*
 
-### How to use:
-1. Ensure your Node.js dependencies are installed: `npm install`
-2. Run the script:
-   ```bash
-   npm run gogreen
-   ```
-*Note: This script makes commits to the past to modify your contribution graph.*
-
----
-
-## 📌 Goals
-
-- Build a strong foundation in Core Java
-- Practice problem-solving with DSA in Java
-- Work on real-world mini projects
+Sit back and watch the magic happen! The script will loop and generate the fake commits locally and automatically `push` them to your GitHub profile branch.
 
 ---
 
-## 👤 Author
-
-**Rudransh**  
-🔗 [GitHub](https://github.com/rudransh-ai-dev)
+## 🎨 Creative Ideas & Next Steps
+- **Paint Shapes:** Instead of passing random inputs, map an X (weeks) & Y (days) grid loop to draw specific letters, words, or pixel art!
+- **Commit Density:** Instead of one random commit in a day, map multiple to increase the "darkness" of the green square.
 
 ---
 
-> *"The expert in anything was once a beginner."* — Keep coding! 💪
+## ⚠️ Disclaimer
+While this is a super fun way to demonstrate automation using JavaScript and Git internals to trick GitHub's UI graph, remember that relying *solely* on fake commits to impress recruiters might not work—they typically check the code contents too! Use it for fun, art, or just a cool flex.
+
+---
+### 👤 Built by Rudransh
+🔗 [GitHub Profile](https://github.com/rudransh-ai-dev)

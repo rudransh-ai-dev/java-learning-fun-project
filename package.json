@@ -1,20 +1,20 @@
 {
-  "name": "java-learning-",
+  "name": "green-graph",
   "version": "1.0.0",
-  "description": "Welcome to my **Java Learning** journey! This repository is a collection of Java programs, practice exercises, and projects as I explore and master the Java programming language.",
-  "main": "goGreen/index.js",
+  "description": "A clever Node.js script to paint your GitHub contribution graph green by making commits to the past or future.",
+  "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "gogreen": "node goGreen/index.js"
+    "start": "node index.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["github", "contributions", "automation", "commits", "green"],
+  "author": "Rudransh",
   "license": "ISC",
   "dependencies": {
     "jsonfile": "^6.2.0",
     "moment": "^2.30.1",
     "random": "^4.1.0",
-    "simple-git": "^3.33.0"
+    "simple-git": "^3.25.0"
   }
 }
