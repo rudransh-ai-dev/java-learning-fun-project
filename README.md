@@ -9,7 +9,6 @@ Welcome to my **Java Learning** journey! This repository is a collection of Java
 ```
 java-learning-/
 ├── goGreen/        # Tool to generate GitHub contribution activity
-├── venv/           # Python virtual environment (for tooling/scripting support)
 ├── package.json    # Node.js dependencies and scripts
 └── README.md       # This file
 ```
@@ -40,20 +39,6 @@ java-learning-/
 
 - **Java JDK** 11 or higher → [Download here](https://www.oracle.com/java/technologies/downloads/)
 - Any IDE: **IntelliJ IDEA**, **Eclipse**, or **VS Code** with Java Extension Pack
-
-### Python Virtual Environment (for scripting/tooling)
-
-A Python virtual environment is included for any helper scripts or automation tools.
-
-```bash
-# Activate the virtual environment
-source venv/bin/activate
-
-# Deactivate when done
-deactivate
-```
-
----
 
 ## 🚀 How to Run Java Programs
 
